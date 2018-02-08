@@ -13,6 +13,7 @@
 		0419739F202C847500977676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0419739E202C847500977676 /* Assets.xcassets */; };
 		041973A2202C847500977676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041973A0202C847500977676 /* LaunchScreen.storyboard */; };
 		041973A5202C847500977676 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041973A4202C847500977676 /* main.m */; };
+		041973AD202C848900977676 /* JHDiagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 041973AC202C848900977676 /* JHDiagram.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		041973A1202C847500977676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041973A3202C847500977676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041973A4202C847500977676 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		041973AB202C848900977676 /* JHDiagram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHDiagram.h; sourceTree = "<group>"; };
+		041973AC202C848900977676 /* JHDiagram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHDiagram.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				041973A0202C847500977676 /* LaunchScreen.storyboard */,
 				041973A3202C847500977676 /* Info.plist */,
 				041973A4202C847500977676 /* main.m */,
+				041973AB202C848900977676 /* JHDiagram.h */,
+				041973AC202C848900977676 /* JHDiagram.m */,
 			);
 			path = "Lab4-JohanHjalmarsson";
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0419739A202C847500977676 /* ViewController.m in Sources */,
+				041973AD202C848900977676 /* JHDiagram.m in Sources */,
 				041973A5202C847500977676 /* main.m in Sources */,
 				04197397202C847500977676 /* AppDelegate.m in Sources */,
 			);
