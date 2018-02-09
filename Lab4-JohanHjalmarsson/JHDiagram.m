@@ -25,7 +25,7 @@
 
     for (int i=0;i<self.array.count;i++) {
         float input = [[[self.array objectAtIndex:i] objectForKey:@"value"] floatValue];
-        NSString *text = [[self.array objectAtIndex:i] objectForKey:@"name"];
+        NSString *text = [self getShorterString:[[self.array objectAtIndex:i] objectForKey:@"name"]];
         CGRect staple = CGRectMake(rect.size.width/self.array.count*i,
                                    maxHeight-maxHeight*input/high,
                                    rect.size.width/self.array.count,
@@ -40,6 +40,7 @@
         label.adjustsFontSizeToFitWidth = YES;
         [self addSubview:label];
     }
+    
     UIBezierPath *frame = [UIBezierPath bezierPathWithRect:rect];
     [[UIColor blackColor] setStroke];
     [frame stroke];
@@ -57,11 +58,7 @@
 
 - (UIColor*)getAColor:(int)i {
     UIColor *color;
-    if (i%2) {
-        color = [UIColor redColor];
-    } else {
-        color = [UIColor blueColor];
-    }
+    color = i%2 ? [UIColor redColor] : [UIColor blueColor];
     return color;
 }
 
